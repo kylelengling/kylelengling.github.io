@@ -1,0 +1,11 @@
+body {
+	padding: 10px;
+	width: 100%;
+}
+
+.wrapper {
+	@include outer-container(100%);
+}
+
+section {}
+}
