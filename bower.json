@@ -1,0 +1,15 @@
+{
+  "name" : "www-kylelengling",
+  "version": "0.1",
+  "dependencies" : {
+    "jquery": "1.11.1",
+        "normalize-css": "latest"
+    },
+    "install" : {
+        "path"  : {
+            "js": "_js/",
+            "css": "_css/"
+        }
+  }
+
+}

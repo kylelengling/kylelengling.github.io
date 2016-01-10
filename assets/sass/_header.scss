@@ -1,0 +1,52 @@
+header {
+	min-height: 68px;
+	padding: 35px 0px;
+}
+
+@media screen and (min-width: $small-screen) {
+section {
+	@include align-items(stretch);
+  	@include display(flex);
+  	@include flex-direction(row);
+  	@include justify-content(center);
+
+	@include outer-container(980px);
+
+
+}
+}
+
+
+nav {
+	ul {
+		text-transform: lowercase;
+		li {
+			display: inline;
+			font-size: 1.25em;
+			padding: 0px 10px;
+			border-right: 1px solid $base-border-color;
+			&:last-child {
+				border-right: none;
+			}
+		}
+	}
+}
+
+
+
+
+@media screen and (max-width: $small-screen){
+
+
+nav {
+	ul {
+		text-transform: lowercase;
+		li {
+			display: block;
+			font-size: 1.25em;
+			padding: 0px 10px;
+			border-right: none;
+		}
+	}
+}
+}

@@ -1,0 +1,10 @@
+// Syles
+@import '../../vendor/bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../../vendor/bower_components/neat/app/assets/stylesheets/neat';
+@import '../../vendor/bower_components/normalize-scss/normalize.scss';
+@import "base/base";
+
+
+@import 'wrapper';
+@import 'header';
+@import 'footer';
