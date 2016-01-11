@@ -22,14 +22,14 @@ header {
 }
 
 .link-underline {
-	border-bottom: 3px solid #52d462;
-	box-shadow: inset 0 -2px 0 #52d462;
+	border-bottom: 3px solid #19E232;
+	box-shadow: inset 0 -2px 0 #19E232;
 	font-family: inherit;
 	@include transition()
 }
 
 .link-underline:hover, .link-underline:focus, .link-underline:active {
-    background: #52d462;
+    background: #19E232;
     }
 
 
