@@ -3,7 +3,7 @@ header {
 	padding: 35px 0px;
 }
 
-@media screen and (min-width: $small-screen) {
+@media screen and (min-width: $medium-screen) {
 section {
 	@include align-items(stretch);
   	@include display(flex);

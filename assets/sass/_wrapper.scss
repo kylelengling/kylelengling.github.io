@@ -3,31 +3,32 @@ html, body {
 			height: 100%;
 			margin: 0px;
 			border: 0;
-			overflow: hidden; /*  Disable scrollbars */
+			overflow-x: hidden; /*  Disable scrollbars */
 			display: block;  /* No floating content on sides */
 }
 canvas {
-	position: absolute;
 	
 	z-index: -1;
 	 position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    @include transform(translate(-50%, -50%));
     min-width: 100%;
+}
+
+.about {
+	border-bottom: 1px solid $base-border-color;
 }
 
 .wrapper {
 	@include outer-container(980px);
 	border-bottom: 1px solid $base-border-color;
 	padding:0 10px 10px 10px;
-
 }
 
 .overlay {
-  background-color: rgba(221, 234, 237, 0.235);
-  height: 100%;
-
+	padding-bottom: 10px;
+	background-color: rgba(221, 234, 237, 0.335);
 }
 
 .left-column {
@@ -44,6 +45,7 @@ canvas {
 	border-bottom: 1px solid $base-border-color;
 	padding: 20px 0;
 	margin-bottom: 15px;
+	@include span-columns(4 of 4);
 	h1 {
 		font-size: 1.5rem;
 	}
@@ -65,23 +67,45 @@ canvas {
 	}
 }
 
-.development, .experience {
+.development, .experience, .work {
+	border-bottom: 1px solid $base-border-color;
+
+	
 	h3 {
 		margin-bottom: 0px;
 	}
 }
 
+.development, .experience {
+		padding: 20px 0;
+}
+
+.work {
+	padding-bottom: 20px;
+}
+
 .experience {
+	margin-bottom: 20px;
 	@include span-columns(4 of 4);
 	ul {
 		padding: 0
 	}
 	ul li {
-		display: inline-block;
 		padding-right: 10px;
 		ul li {
 			display: block;
 		}
+	}
+
+}
+
+
+
+.development {
+	@include span-columns(4 of 4);
+	h2 {
+		margin-bottom: 0px;
+	
 	}
 }
 
@@ -95,7 +119,11 @@ canvas {
 	}
 
 	.about {
-		@include span-columns(5 of 8);
+		@include span-columns(8 of 8);
+		p {
+			@include span-columns (5 of 8);
+		}
+
 	}
 
 	.callout {
@@ -119,4 +147,13 @@ canvas {
 		border-bottom: 1px solid $base-border-color;
 	}
 
+}
+
+#skills {
+	 p {
+	@include span-columns(5 of 8);
+	}
+	h2 {
+		margin-bottom: 5px;
+	}
 }
