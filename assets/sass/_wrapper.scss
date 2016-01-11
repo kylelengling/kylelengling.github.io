@@ -16,6 +16,10 @@ canvas {
     min-width: 100%;
 }
 
+.call {
+	color: $action-color;
+}
+
 .about {
 	border-bottom: 1px solid $base-border-color;
 }
@@ -28,7 +32,6 @@ canvas {
 
 .overlay {
 	padding-bottom: 10px;
-	background-color: rgba(221, 234, 237, 0.335);
 }
 
 .left-column {
@@ -82,6 +85,12 @@ canvas {
 
 .work {
 	padding-bottom: 20px;
+	h3 {
+		margin-bottom: 5px;
+	}
+	ul {
+		padding-bottom: 5px;
+	}
 }
 
 .experience {
@@ -99,6 +108,9 @@ canvas {
 
 }
 
+#contact {
+	padding: 20px 0;
+}
 
 
 .development {
@@ -110,6 +122,19 @@ canvas {
 }
 
 @media screen and (min-width:$medium-screen) {
+	#contact {
+		p {
+			@include span-columns(5 of 8);
+		}
+	}
+	#skills {
+	 p {
+	@include span-columns(5 of 8);
+	}
+	h2 {
+		margin-bottom: 5px;
+	}
+}
 	.left-column {
 	@include span-columns(5	 of 8);
 	}
@@ -149,11 +174,5 @@ canvas {
 
 }
 
-#skills {
-	 p {
-	@include span-columns(5 of 8);
-	}
-	h2 {
-		margin-bottom: 5px;
-	}
-}
+
+

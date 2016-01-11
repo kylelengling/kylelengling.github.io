@@ -377,7 +377,7 @@ th {
 
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   appearance: none;
-  background-color: #477dca;
+  background-color: #2b8cbe;
   border: 0;
   border-radius: 3px;
   color: #fff;
@@ -395,13 +395,13 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap; }
   button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
-    background-color: #3964a2;
+    background-color: #227098;
     color: #fff; }
   button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
     button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover {
-      background-color: #477dca; }
+      background-color: #2b8cbe; }
 
 fieldset {
   background-color: white;
@@ -442,8 +442,8 @@ select[multiple=multiple] {
     border-color: #cccccc; }
   input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
   select[multiple=multiple]:focus {
-    border-color: #477dca;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+    border-color: #2b8cbe;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(38, 125, 169, 0.7);
     outline: none; }
   input[type="color"]:disabled, input[type="date"]:disabled, input[type="datetime"]:disabled, input[type="datetime-local"]:disabled, input[type="email"]:disabled, input[type="month"]:disabled, input[type="number"]:disabled, input[type="password"]:disabled, input[type="search"]:disabled, input[type="tel"]:disabled, input[type="text"]:disabled, input[type="time"]:disabled, input[type="url"]:disabled, input[type="week"]:disabled, input:not([type]):disabled, textarea:disabled,
   select[multiple=multiple]:disabled {
@@ -530,11 +530,16 @@ h6 {
   line-height: 1.2;
   margin: 0 0 0.75em; }
 
+h2,
+h4,
+h6 {
+  color: #2b8cbe; }
+
 h1 {
   font-size: 2.45rem; }
 
 h2 {
-  font-size: 1.5rem; }
+  font-size: 1.55rem; }
 
 h3 {
   font-size: 1.17rem; }
@@ -552,12 +557,12 @@ p {
   margin: 0 0 0.75em; }
 
 a {
-  color: #477dca;
+  color: #2b8cbe;
   text-decoration: none;
   transition: color 150ms ease;
   font-family: 'courier', sans-serif; }
   a:active, a:focus, a:hover {
-    color: #355e98; }
+    color: #20698f; }
 
 hr {
   border-bottom: 1px solid #fff;
@@ -593,6 +598,9 @@ canvas {
   transform: translate(-50%, -50%);
   min-width: 100%; }
 
+.call {
+  color: #2b8cbe; }
+
 .about {
   border-bottom: 1px solid #fff; }
 
@@ -608,8 +616,7 @@ canvas {
     display: table; }
 
 .overlay {
-  padding-bottom: 10px;
-  background-color: rgba(221, 234, 237, 0.335); }
+  padding-bottom: 10px; }
 
 .left-column {
   float: left;
@@ -694,6 +701,10 @@ canvas {
 
 .work {
   padding-bottom: 20px; }
+  .work h3 {
+    margin-bottom: 5px; }
+  .work ul {
+    padding-bottom: 5px; }
 
 .experience {
   margin-bottom: 20px;
@@ -710,6 +721,9 @@ canvas {
     .experience ul li ul li {
       display: block; }
 
+#contact {
+  padding: 20px 0; }
+
 .development {
   float: left;
   display: block;
@@ -721,6 +735,22 @@ canvas {
     margin-bottom: 0px; }
 
 @media screen and (min-width: 769px) {
+  #contact p {
+    float: left;
+    display: block;
+    margin-right: 3.57866%;
+    width: 61.158%; }
+    #contact p:last-child {
+      margin-right: 0; }
+  #skills p {
+    float: left;
+    display: block;
+    margin-right: 3.57866%;
+    width: 61.158%; }
+    #skills p:last-child {
+      margin-right: 0; }
+  #skills h2 {
+    margin-bottom: 5px; }
   .left-column {
     float: left;
     display: block;
@@ -760,17 +790,6 @@ canvas {
   .content {
     padding-bottom: 20px;
     border-bottom: 1px solid #fff; } }
-
-#skills p {
-  float: left;
-  display: block;
-  margin-right: 3.57866%;
-  width: 61.158%; }
-  #skills p:last-child {
-    margin-right: 0; }
-
-#skills h2 {
-  margin-bottom: 5px; }
 
 header {
   min-height: 68px;
@@ -841,8 +860,8 @@ nav ul {
       border-right: none; } }
 
 footer {
-  background-color: rgba(221, 234, 237, 0.335);
-  width: 100%; }
+  width: 100%;
+  padding: 10px; }
   footer section {
     max-width: 980px;
     margin-left: auto;

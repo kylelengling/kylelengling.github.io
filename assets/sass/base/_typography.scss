@@ -20,10 +20,18 @@ h6 {
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
 
+
+}
+h2,
+
+h4,
+
+h6 {
+    color: $action-color;
 }
 
 h1 { font-size: 2.45rem; }
-h2 { font-size: 1.5rem; }
+h2 { font-size: 1.55rem; }
 h3 { font-size: 1.17rem; }
 h4 { font-size: 1.12rem; }
 h5 { font-size: .83rem; }
