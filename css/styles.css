@@ -560,8 +560,7 @@ p {
 a {
   color: #2b8cbe;
   text-decoration: none;
-  transition: color 150ms ease;
-  font-family: 'courier', sans-serif; }
+  transition: color 150ms ease; }
   a:active, a:focus, a:hover {
     color: #20698f; }
 
@@ -610,7 +609,7 @@ header {
 
 .link-underline {
   border-bottom: 3px solid #52d462;
-  box-shadow: inset 0 -5px 0 #52d462;
+  box-shadow: inset 0 -2px 0 #52d462;
   font-family: inherit;
   -webkit-transition: all 0.15s ease-out 0s;
   -moz-transition: all 0.15s ease-out 0s;
@@ -623,7 +622,7 @@ header {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(204, 235, 197, 0.45);
+  background-color: rgba(204, 235, 197, 0.35);
   padding: 10px 40px; }
   .wrapper::after {
     clear: both;
@@ -647,6 +646,48 @@ header {
 .about {
   padding: 20px 0;
   margin-bottom: 15px; }
+
+.social-media {
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  box-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  -o-align-items: stretch;
+  align-items: stretch;
+  -ms-flex-align: stretch;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center; }
+  .social-media ul li {
+    display: inline;
+    margin: 0 25px 0 0; }
+    .social-media ul li:last-child {
+      margin: 0; }
 
 @media screen and (min-width: 769px) {
   .callout h1 {

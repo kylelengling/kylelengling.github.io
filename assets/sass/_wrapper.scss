@@ -23,7 +23,7 @@ header {
 
 .link-underline {
 	border-bottom: 3px solid #52d462;
-	box-shadow: inset 0 -5px 0 #52d462;
+	box-shadow: inset 0 -2px 0 #52d462;
 	font-family: inherit;
 	@include transition()
 }
@@ -35,7 +35,7 @@ header {
 
 .wrapper {
 	@include outer-container(700px);
-background-color: rgba(204,235,197, 0.45);
+background-color: rgba(204,235,197, 0.35);
 	padding:10px 40px;
 }
 
@@ -59,6 +59,22 @@ background-color: rgba(204,235,197, 0.45);
 	margin-bottom: 15px;
 }
 
+.social-media {
+		@include align-items(stretch);
+  	@include display(flex);
+  	@include flex-direction(row);
+  	@include justify-content(center);
+	ul {
+
+		li {
+			display: inline;
+			margin: 0 25px 0 0;
+			&:last-child {
+				margin:0;
+			}
+		}
+	}
+}
 
 @media screen and (min-width:$medium-screen) {
 	
