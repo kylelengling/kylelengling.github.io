@@ -36,7 +36,7 @@ header {
 .wrapper {
 	@include outer-container(700px);
 background-color: rgba(197,235,197, 0.30);
-
+	margin-bottom: 20px;
 	padding: 10px 60px 40px 60px;
 }
 
@@ -50,7 +50,7 @@ background-color: rgba(197,235,197, 0.30);
 
 .hero-image {
 	@include span-columns(4 of 4);
-	margin-bottom: -6px;
+	margin-bottom: 20px;
 
 }
 

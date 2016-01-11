@@ -3,7 +3,6 @@
         height: window.innerHeight,
         cell_size: 85,
         variance: "1",
-
         x_colors: 'GnBu',
      
 
