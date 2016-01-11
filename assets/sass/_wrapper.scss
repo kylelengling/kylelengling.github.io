@@ -35,8 +35,9 @@ header {
 
 .wrapper {
 	@include outer-container(700px);
-background-color: rgba(204,235,197, 0.35);
-	padding:10px 40px;
+background-color: rgba(197,235,197, 0.30);
+
+	padding: 10px 40px 40px 40px;
 }
 
 .callout {
@@ -65,6 +66,7 @@ background-color: rgba(204,235,197, 0.35);
   	@include flex-direction(row);
   	@include justify-content(center);
 	ul {
+			padding-left:0;
 
 		li {
 			display: inline;

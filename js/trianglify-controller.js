@@ -1,10 +1,12 @@
   var pattern = Trianglify({
         width: window.innerWidth,
         height: window.innerHeight,
-        cell_size: 75,
+        cell_size: 85,
         variance: "1",
-        seed: 'i7ons',
+
         x_colors: 'GnBu',
+     
+
         
         
     });
@@ -15,9 +17,9 @@
           var pattern = Trianglify({
         width: window.innerWidth,
         height: window.innerHeight,
-        cell_size: 75,
+        cell_size: 85,
         variance: "1",
-        seed: 'i7ons',
+     
         x_colors: 'GnBu',
         
         
