@@ -7,18 +7,29 @@ html, body {
 			display: block;  /* No floating content on sides */
 }
 canvas {
-	
 	z-index: -1;
 	 position: absolute;
     left: 50%;
     top: 50%;
     @include transform(translate(-50%, -50%));
     min-width: 100%;
- 
+
 }
 
 header {
 	@include outer-container(700px);
+}
+
+.about {
+	padding: 20px 0;
+	margin-bottom: 15px;
+}
+
+.callout {
+	padding: 20px 0;
+	h1 {
+		font-size: 1.5rem;
+	}
 }
 
 .link-underline {
@@ -30,22 +41,13 @@ header {
 
 .link-underline:hover, .link-underline:focus, .link-underline:active {
     background: #19E232;
-    }
-
+}
 
 .wrapper {
 	@include outer-container(700px);
-background-color: rgba(197,235,197, 0.30);
+	background-color: rgba(197,235,197, 0.30);
 	margin-bottom: 20px;
 	padding: 10px 60px 40px 60px;
-}
-
-.callout {
-
-	padding: 20px 0;
-	h1 {
-		font-size: 1.5rem;
-	}
 }
 
 .hero-image {
@@ -54,20 +56,13 @@ background-color: rgba(197,235,197, 0.30);
 
 }
 
-.about {
-		
-	padding: 20px 0;
-	margin-bottom: 15px;
-}
-
 .social-media {
 		@include align-items(stretch);
   	@include display(flex);
   	@include flex-direction(row);
   	@include justify-content(center);
-	ul {
+		ul {
 			padding-left:0;
-
 		li {
 			display: inline;
 			margin: 0 25px 0 0;
@@ -79,18 +74,17 @@ background-color: rgba(197,235,197, 0.30);
 }
 
 @media screen and (min-width:$medium-screen) {
-	
-
 	.callout {
-		
-
 		h1 {
 			font-size: 2.45rem;
 			margin: 0px;
+			line-height: 1.25;
 		}
 	}
-
+	.wrapper {
+		padding: 10px 24px 40px 24px;
+	}
+ 	p {
+		font-size: 14px;
+	}
 }
-
-
-
