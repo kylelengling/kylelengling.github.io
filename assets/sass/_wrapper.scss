@@ -47,7 +47,10 @@ header {
 	@include outer-container(700px);
 	background-color: rgba(197,235,197, 0.30);
 	margin-bottom: 20px;
-	padding: 10px 60px 40px 60px;
+	padding: 10px 24px 40px 24px;
+	p {
+		font-size: 14px;
+	}
 }
 
 .hero-image {
@@ -82,9 +85,9 @@ header {
 		}
 	}
 	.wrapper {
-		padding: 10px 24px 40px 24px;
+		padding: 10px 60px 40px 60px;
 	}
  	p {
-		font-size: 14px;
+		font-size: 16px;
 	}
 }
