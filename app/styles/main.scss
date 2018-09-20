@@ -1,0 +1,80 @@
+// bower:scss
+@import "bower_components/sassy-maps/sass/_sassy-maps.scss";
+@import "bower_components/breakpoint-sass/stylesheets/_breakpoint.scss";
+@import "bower_components/susy/sass/_susy.scss";
+// endbower
+
+@charset 'UTF-8';
+
+/* body, .hero-unit, .browserupgrade can be removed */
+body {
+    background: #fafafa;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.hero-unit {
+    margin: 50px auto 0 auto;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 60px;
+    h1 {
+        font-size: 60px;
+        line-height: 1;
+        letter-spacing: -1px;
+    }
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+@import 'vendor/normalize';
+
+// Configuration and helpers
+@import
+    'abstracts/breakpoints',
+    'abstracts/functions',
+    'abstracts/mixins',
+    'abstracts/variables';
+
+
+
+
+
+// Vendors
+// @import 'vendor/YOUR_VENDOR_STYLE;
+
+// Base stuff
+@import
+    'base/base',
+    'base/fonts',
+    'base/typography',
+    'base/reset',
+    'base/helpers';
+
+// Layout-related sections
+@import
+    'layout/header',
+    'layout/footer',
+    'layout/forms';
+
+// Components
+@import
+    'components/buttons';
+
+// Page-specific styles
+@import
+    'pages/home';
+
+// Themes
+@import
+    'themes/default';
