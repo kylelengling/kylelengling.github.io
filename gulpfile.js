@@ -1,4 +1,4 @@
-// generated on 2018-09-20 using generator-mspfed 0.0.2
+// generated on 2018-10-11 using generator-mspfed 0.0.2
 const gulp = require('gulp');
 const gulpLoadPlugins = require('gulp-load-plugins');
 const browserSync = require('browser-sync');

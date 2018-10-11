@@ -2,13 +2,6 @@
   "name": "kylelengling-github-io",
   "private": true,
   "dependencies": {
-    "breakpoint-sass": "^2.7.0",
-    "jquery": "^2.1.1",
-    "modernizr": "~2.8.1",
-    "susy": "^2.2.7"
-  },
-  "devDependencies": {
-    "chai": "^4.1.2",
-    "mocha": "^5.2.0"
+    "modernizr": "~2.8.1"
   }
 }
