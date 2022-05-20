@@ -1,7 +1,0 @@
-{
-  "name": "kylelengling-github-io",
-  "private": true,
-  "dependencies": {
-    "modernizr": "~2.8.1"
-  }
-}
